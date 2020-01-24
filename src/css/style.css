@@ -1,0 +1,202 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: relative;
+}
+
+nav {
+    height: 50px;
+    background-color: #212121;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.menu {
+    padding: 13px 70px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;   
+}
+
+.menu a {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.menu .menu-item {
+    border-right: 2px dotted black;
+    padding-right: 28px;
+}
+
+.subheader {
+    top: 50px;
+    width: 100%;
+    position: absolute;
+    min-height: 84px;
+    background-color: rgba(0, 0, 0, .6);
+    
+}
+
+.subheader .subheader-logo {
+    display: block;
+    min-width: 100%;
+    margin-top: 16px;
+}
+
+.subheader .logo-text {
+    margin-top: 6px;
+    opacity: 0.5;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.subheader .col {
+    text-align: right;
+    margin-top: 19px;
+    padding: 0;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.subheader .fone {
+    display: block;
+    margin-top: 8px;
+    text-align: right;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 12px;
+}
+
+.subheader .btn, .promo .btn {
+    margin-top: 19px;
+    min-width: 172px;
+    height: 46px;
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 4px;
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.promo {
+    text-align: center;
+    min-height: 800px;
+    background: url(../img/bg-main.png) center center/cover;
+}
+
+.promo .promo-header {
+    text-align: center;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 60px;
+    margin: 0;
+    margin-top: 151px;
+}
+
+.promo .promo-subheader {
+    text-align: center;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 36px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.promo .promo-desc {
+    margin-top: 23px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.promo .btn {
+    margin-top: 118px;
+    min-width: 259px;
+    height: 63px;
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+    border: none;
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+}
+
+.work .work-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 71px;    
+    width: 112px;
+    height: 24px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.work .work-item {
+    display: flex;
+    align-items: center;   
+}
+
+.work .work-desc {
+    text-align: center;
+    margin-top: 44px;
+    margin-bottom: 40px;
+    color: #222;
+    font-family: Roboto;
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.work .elips {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+}
+
+.work .work-item-desk {
+    text-align: justify;
+    margin-left: 26px;
+    max-width: 342px;
+    color: #202020;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.work .work-item-desk span {
+    text-align: left; /*Почему не применяется? */
+    color: #1eacc7;
+    font-size: 17px;
+    font-weight: 400;
+    
+}
+
+.col-md-6 {
+    margin-bottom: 35px;
+}
+
+

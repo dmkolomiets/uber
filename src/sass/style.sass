@@ -1,0 +1,372 @@
+*
+    font-family: 'Roboto', sans-serif
+@import "variables"
+@import "mixins"
+@import "general"
+@import "media"
+
+@media (max-width: 1200px)
+    .menu
+        &-link
+            font-size: 12px
+        &-item
+            padding-right: 20px
+    .promo
+        .promo-header
+            font-size: 50px
+        .btn
+            margin-top: 75px
+    .work
+        .work-item
+            align-items: flex-start
+        .work-item-desk
+            max-width: 300px
+    .mobile
+        .mobile-item
+            width: 300px
+
+    footer
+        
+        .list-wraper 
+            .main-link-item
+                font-size: 11px
+            .sub-link-item
+                font-size: 9px
+
+@media (max-width: 991px)
+    .menu
+        &-link
+            font-size: 9px
+        &-item
+            padding: 0 12px 9px 0
+    .subheader
+        .fone
+            font-size: 17px
+        img
+            width: 100%
+        .logo-text
+            font-size: 11px
+        .btn-1
+            margin-top: 21px
+            width: 100%
+            height: 40px
+    .promo
+        min-height: 610px
+        .promo-header
+            margin-top: 108px
+            font-size: 36px
+        .promo-subheader
+            font-size: 20px
+            margin-top: 0
+        .promo-desc
+            font-size: 15px
+        .btn
+            min-width: 166px
+            height: 40px
+            font-size: 12px
+            margin-top: 48px
+    .work
+        .work-item
+            flex-direction: column
+            align-items: center
+        .work-item-desk
+            max-width: 300px
+            margin-top: 20px
+
+    .mobile
+        .title
+            font-size: 30px
+        .mobile-item
+            width: 220px
+            height: 250px
+        .mobile-item-title
+            font-size: 16px
+    .auto
+        .choice
+            height: 435px
+            .title
+                font-size: 30px
+            .sub-title
+                font-size: 15px
+        .auto-fouter
+            min-height: 236px
+            img
+                width: 80%
+                bottom: 50px
+            .desc
+                bottom: 28px
+
+    .require
+        padding: 40px 0 0
+        .title
+            margin-top: 25px
+            font-size: 28px
+        .sub-title
+            font-size: 18px
+        ul
+            li 
+                font-size: 14px
+        .pad
+            padding: 0 22px
+    
+    .map
+        min-height: 500px
+        .map-title
+            margin-top: 18px
+            font-size: 26px
+        .map-sub-title
+            margin-top: 8px
+            font-size: 13px
+
+    footer
+        padding-bottom: 36px
+        .social
+            width: 25%
+            flex-basis: 0
+        .list-wraper
+            width: 49%
+            .main-link-item 
+                margin: 0 4px
+            .sub-link-item
+                margin: 0 6px
+
+            
+        .link-download
+            width: 25%
+            display: flex
+            flex-direction: column
+            text-align: right
+
+@media (max-width: 767px)
+    header
+        .subheader
+            .xs-visible
+                display: block
+            .fone
+                display: block
+                margin-top: 10px
+                color: #fff
+                font-size: 16px
+                font-weight: 400
+                text-transform: uppercase
+                text-align: center
+            .btn-1
+                display: block
+                height: 40px
+                width: 200px
+                margin: 10px auto
+                
+    .menu
+        position: fixed
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        padding: 25px 15px
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        background-color: rgba(0,0,0, .8)
+        transition: 1s left
+        &-active
+            left: 0
+        .menu-item
+            padding-right: 0
+            border: none
+            margin: 10px 0
+        .menu-link
+            font-size: 18px
+    .gamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 2px
+            transition: 1s all
+        &-active
+            span
+                margin-bottom: -2px
+                &:first-child
+                    transform: translateY(7px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:last-child
+                    transform: translateY(7px) rotate(45deg)
+    .xl-hiden
+        display: none   
+    
+    .promo
+        min-height: 610px
+        &-header
+            margin-top: 108px
+            line-height: 45px
+        &-desc
+            line-height: 20px
+    .auto
+        .auto-fouter
+            img
+                bottom: 109px
+    footer
+        .social
+            &-item
+                height: 23px
+                width: 23px
+@media (max-width: 575px)
+    nav
+        height: 30px !important
+        .menu
+            .menu-item
+                width: 100% 
+                text-align: center
+                .menu-link
+                    display: block 
+                    width: 100%
+                    padding: 5px 0  
+    header        
+        .subheader
+            min-height: 60px
+            top: 30px
+            .logo
+                margin-top: 26px
+            .logo-text
+                display: none
+            .fone
+                font-size: 12px
+                font-weight: 400
+                text-decoration: uppercase
+            .btn-1
+                height: 22px
+                width: 110px
+                font-size: 9px
+    .promo
+        min-height: 400px
+        padding: 53px 0 35px          
+        .promo-header
+            font-size: 30px
+            padding: 0 24px
+            line-height: 35px
+        .promo-subheader
+            font-size: 20px
+            margin-top: 33px
+            padding: 0 10px
+            line-height: 30px
+        .promo-btn
+            width: 210px
+            height: 50px
+            margin-top: 72px
+        .promo-desc
+            display: none
+    .menu
+        width: 80%
+
+    .work
+        padding: 22px 0 36px 0
+        .lable
+            margin-top: 0
+        .title
+            font-size: 15px
+            margin: 15px 0 26px 0 
+            line-height: 16px        
+        .elips
+            width: 100px
+            height: 100px
+        .work-item-desk
+            margin-left: 0
+            width: 100%
+            margin-top: 27px
+    .mobile
+        .title
+            font-size: 17px
+        .sub-title
+            font-size: 12px
+            margin-top: 15px
+        .mobile-item
+            margin: 10px auto
+            width: 250px
+    .auto
+        .choice
+            height: 190px
+            padding-top: 20px
+            .title
+                margin-top: 20px
+                font-size: 20px
+            .sub-title
+                font-size: 12px
+                margin-top: 10px
+                padding: 0 15px
+        .auto-fouter
+            min-height: 240px
+            img
+                top: -45px
+            .desc
+                width: 100%
+                font-size: 13px
+                line-height: 19px
+                bottom: 8px
+    .require        
+        .title
+            font-size: 20px
+            margin-bottom: 0
+        ul 
+            li 
+                font-size: 12px
+        .row
+            margin: 0
+            .sub-title
+                font-size: 18px
+            .under-text
+                font-size: 13px
+        .pad
+            padding: 10px 22px
+    .map
+        min-height: 370px
+        .map-btn-text
+            font-size: 12px
+    footer 
+        min-height: 270px
+        padding: 40px 13px 10px
+        display: flex
+        flex-direction: column
+        align-items: center
+        footer:before
+            left: 52%
+        .social
+            width: 100%
+            justify-content: center
+        .list-wraper
+            margin-top: 10px
+            width: 100%
+            .sub-link
+                font-size: 11px
+        .link-download
+            width: 100%
+            text-align: center
+            
+
+        
+        
+        
+    
+
+            
+
+                    
+
+    
+                    
+                    
+
+            
+
+    
+            
+        
+
