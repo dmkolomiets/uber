@@ -57,7 +57,7 @@
     "isarray": "^1.0.0",
     "is-windows": "^1.0.2",
     "isobject": "^3.0.1",
-    "kind-of": "^5.1.0",
+    "kind-of": "^6.0.3",
     "lcid": "^1.0.0",
     "make-iterator": "^1.0.1",
     "map-cache": "^0.2.2",
